@@ -62,7 +62,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-\[INSERT CONTACT METHOD\].
+\[oyatsimichael@gmail.com \].
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -113,6 +113,41 @@ individual, or aggression toward or disparagement of classes of individuals.
 
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
+
+## GOALS
+What are our team goals for this project? What do we want to accomplish? What skills do we want to develop or refine?
+
+We plan to work together in a respectful manner both inside and outside of class.
+Open and clear communication about scheduling and expectations.
+Produce a project that we are proud of. 
+We would like to practice our theoretical skills learned in the lecture and apply them to a real-life example. 
+
+## EXPECTATIONS
+What do we expect of one another regarding attendance at meetings, participation, frequency of communication, quality of work, etc.?
+
+We expect everyone to attend meetings, and if anyone cannot attend a meeting, they must inform the group in advance. 
+We expect that everyone would stay in touch and adequately check for messages from other group members.
+We expect equal contribution from all members so that the final project is a fair representation of each member’s work.  
+
+## MEETING TIMES
+When do we plan to conduct our meetings?
+Initial Meeting:
+Jan. 8 4:00pm - 6:00pm
+Subsequent Meetings:
+Monday 12:30pm - 1:00pm
+
+## POLICIES & PROCEDURES
+What rules can we agree on to help us meet our goals and expectations?
+
+Feedback to other groupmates must be constructive. 
+Negative and or harmful comments will not be tolerated and will be reported to either the TAs or the instructors. 
+Deadlines we set as a group must be obeyed out of respect for everyone’s schedules. 
+If something comes up and a deadline or meeting is missed, communicate to the rest of the group as soon as possible. 
+
+
+## CONSEQUENCES
+How will we address non-performance regarding these goals, expectations, policies and procedures?
+If someone is being disruptive or refusing to improve their work standard continuously after a group intervention, the issue will be brought to the attention of either TAs or instructors by the rest of the group members.
 
 ## Attribution
 
