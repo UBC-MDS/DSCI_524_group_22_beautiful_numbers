@@ -1,33 +1,23 @@
-# Welcome to BeautifulNumbers
+# Beautiful Numbers
 
-|        |        |
-|--------|--------|
-| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/beautifulnumbers.svg)](https://pypi.org/project/beautifulnumbers/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/beautifulnumbers.svg)](https://pypi.org/project/beautifulnumbers/)  |
-| Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
+## Contributors
 
-*TODO: the above badges that indicate python version and package version will only work if your package is on PyPI.
-If you don't plan to publish to PyPI, you can remove them.*
+-   Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan
 
-BeautifulNumbers is a project that (describe what it does here).
+## Summary
 
-## Get started
+Beautiful Numbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies.
 
-You can install this package into your preferred Python environment using pip:
+## Included Functions
 
-```bash
-$ pip install beautifulnumbers
-```
+-   `is_prime` Tests whether a given integer is a prime number by checking if it has any divisors other than 1 and itself. Useful for small to moderately sized integers.
 
-TODO: Add a brief example of how to use the package to this section
+-   `binary` Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.
 
-To use beautifulnumbers in your code:
+-   `hexa` Converts a non-negative integer into its hexadecimal representation, returned as a string. Useful for understanding base-16 representations.
 
-```python
->>> import beautifulnumbers
->>> beautifulnumbers.hello_world()
-```
+-   `fib_seq` Generates the Fibonacci sequence from 1 up to a given positive integer n. The output illustrates the recursive growth pattern of the sequence.
 
-## Copyright
+## Contribution to Python Ecosystem
 
-- Copyright © 2026 Jade Chen; Grigory Artazyan; Jackson Lu; Michael Oyatsi.
-- Free software distributed under the [MIT License](./LICENSE).
+Much of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about.
