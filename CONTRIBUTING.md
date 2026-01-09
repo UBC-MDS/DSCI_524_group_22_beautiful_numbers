@@ -3,19 +3,10 @@
 Contributions of all kinds are welcome here, and they are greatly appreciated!
 Every little bit helps, and credit will always be given.
 
-## Example Contributions
-
-You can contribute in many ways, for example:
-
-* [Report bugs](#report-bugs)
-* [Fix Bugs](#fix-bugs)
-* [Implement Features](#implement-features)
-* [Write Documentation](#write-documentation)
-* [Submit Feedback](#submit-feedback)
 
 ### Report Bugs
 
-Report bugs at https://github.com/oyatsi/beautifulnumbers/issues.
+Report bugs at https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues.
 
 **If you are reporting a bug, please follow the template guidelines. The more
 detailed your report, the easier and thus faster we can help you.**
@@ -42,13 +33,13 @@ happy for any support that they can get.
 BeautifulNumbers could always use more documentation, whether as
 part of the official documentation, in docstrings, or even on the web in blog
 posts, articles, and such. Just
-[open an issue](https://github.com/oyatsi/beautifulnumbers/issues)
+[open an issue](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues)
 to let us know what you will be working on so that we can provide you with guidance.
 
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-https://github.com/oyatsi/beautifulnumbers/issues. If your feedback fits the format of one of
+https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues. If your feedback fits the format of one of
 the issue templates, please use that. Remember that this is a volunteer-driven
 project and everybody has limited time.
 
@@ -57,12 +48,12 @@ project and everybody has limited time.
 Ready to contribute? Here's how to set up BeautifulNumbers for
 local development.
 
-1. Fork the https://github.com/oyatsi/beautifulnumbers
+1. Fork the https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers
    repository on GitHub.
 2. Clone your fork locally (*if you want to work locally*)
 
     ```shell
-    git clone git@github.com:your_name_here/beautifulnumbers.git
+    https://github.com/your_name_here/DSCI_524_group_22_beautiful_numbers/issues
     ```
 
 3. [Install hatch](https://hatch.pypa.io/latest/install/).
