@@ -26,4 +26,21 @@ def binary(num):
     "1111"
 
     """
-    return
+    if not isinstance(num, int):
+        raise TypeError("Input must be an integer")
+
+    if num < 0:
+        raise ValueError("Input must be a non-negative integer")
+
+    if num == 0:
+        return "0"
+
+    binary_str = []
+    while num > 0:
+        bit = num & 1
+        num = num >> 1
+        binary_str.append(str(bit))
+
+    binary_str.reverse()
+    delimiter = ""
+    return delimiter.join(binary_str)
