@@ -1,4 +1,4 @@
-from src.beautifulnumbers.binary import binary
+from beautifulnumbers.binary import binary
 import pytest
 
 
