@@ -31,7 +31,7 @@ def test_prime_list_seven():
     """Confirm that when a prime number is used as the input, it is included in the output"""
     assert prime_list(7)[-1] == 7 
     
-def test_boolean_input(self):
+def test_boolean_input():
     """Test that boolean input raises exception (tricky case!)"""
 
     with pytest.raises(Exception, match="The input must be an integer"):
