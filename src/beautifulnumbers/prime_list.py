@@ -77,7 +77,7 @@ def prime_list(n):
         numbers[0] = False
         numbers[1] = False
         
-        for num in range (2, round((n+1) ** 0.5)):
+        for num in range (2, round((n) ** 0.5) + 1):
             if numbers[num] == True:
                 increment = 0
                 j = num ** 2 + increment * num
