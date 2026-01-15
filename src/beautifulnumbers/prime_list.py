@@ -57,7 +57,7 @@ def prime_list(n):
     prime_list = []
     
     # Exception handling for invalid inputs
-    if type(n) is not int:
+    if type(n) is not int or isinstance(n, bool):
         raise Exception("The input must be an integer")
     
     if n < 0:
