@@ -1,6 +1,8 @@
 from beautifulnumbers.fib_seq import fib_seq
 import pytest
 
+# note: used chatgpt to identify missing edge cases (caught the missing base cases test)
+
 def test_fib_seq_invalid_type():
     """Check if raises a TypeError when the input is not an integer"""
     with pytest.raises(TypeError):
