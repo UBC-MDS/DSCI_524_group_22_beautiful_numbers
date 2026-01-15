@@ -32,7 +32,7 @@ def fib_seq(n):
     if n == 2:
         return [1, 1]
 
-    # bottom-up approach
+    # bottom-up approach (note: referenced DSCI 512 notes)
     seq = [1, 1]
     for _ in range(2, n): # repeat this block n - 2 times (note: _ means ignored)
         seq.append(seq[-1] + seq[-2])
