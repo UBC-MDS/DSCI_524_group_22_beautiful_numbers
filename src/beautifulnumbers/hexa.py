@@ -19,4 +19,21 @@ def hexa(number):
     >>> convert_to_hex(255)
     'FF'
     """
-    pass
+    if not isinstance(number, int):
+        raise TypeError("Input must be an integer")
+
+    if number < 0:
+        raise ValueError("Input must be a non-negative integer")
+
+    if number == 0:
+        return '0'
+    
+    hex_chars = '0123456789ABCDEF'
+    result = ''
+    
+    while number > 0:
+        remainder = number % 16
+        result = hex_chars[remainder] + result
+        number = number // 16
+    
+    return result
