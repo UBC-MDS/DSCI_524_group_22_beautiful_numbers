@@ -19,10 +19,10 @@ def hexa(number):
     >>> convert_to_hex(255)
     'FF'
     """
-    if not isinstance(num, int):
+    if not isinstance(number, int):
         raise TypeError("Input must be an integer")
 
-    if num < 0:
+    if number < 0:
         raise ValueError("Input must be a non-negative integer")
 
     if number == 0:
