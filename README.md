@@ -10,7 +10,7 @@ Beautiful Numbers is a small Python package that provides utilities for explorin
 
 ## Included Functions
 
--   `is_prime` Tests whether a given integer is a prime number by checking if it has any divisors other than 1 and itself. Useful for small to moderately sized integers.
+-   `prime_list` For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography. 
 
 -   `binary` Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.
 
