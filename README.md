@@ -94,12 +94,6 @@ print(fib)  # [1, 1, 2, 3, 5, 8]
 
 ### Running Tests
 
-Run all tests with coverage:
-
-```bash
-pytest
-```
-
 Run tests with coverage report:
 
 ```bash
