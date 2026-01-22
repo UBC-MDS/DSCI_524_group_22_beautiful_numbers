@@ -1,0 +1,58 @@
+# Example 2c: Matrix Strategy pytest + ruff Python linter
+# Demonstrates how to run the same job across multiple variations 
+# (in this case, Python versions 3.11, 3.12, 3.13) to ensure compatibility.
+name: 02c-pytest-matrix-ruff
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for 
+  # the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run 
+# sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+
+    # Steps represent a sequence of tasks that will be executed as 
+    # part of the job
+    steps:
+      # Checks-out your repository so your job can access it
+      - name: Check-out repository
+        uses: actions/checkout@v2
+
+      # Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[tests,dev]"
+
+      # Run pytest with coverage
+      - name: Run tests with coverage
+        run: |
+          pytest --cov --cov-report=term --cov-branch
+
+      - name: Run ruff formatter
+        run: |
+          #ruff check .
+          ruff check src/
