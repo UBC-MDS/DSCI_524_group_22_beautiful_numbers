@@ -1,0 +1,60 @@
+name: deploy-test-pypi
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  unit-test-pytest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check-out repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[tests]
+
+      - name: Run tests with coverage
+        run: |
+          pytest --cov --cov-report=term --cov-branch
+
+  build-deploy:
+    needs: unit-test-pytest
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check-out repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install hatch
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Build package
+        run: hatch build
+
+      - name: Publish to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+<<<<<<< HEAD
+          verbose: true
+=======
+          verbose: true
+>>>>>>> 6f80ee00ef7e8179ba34ddf5d71119a429c0c510
