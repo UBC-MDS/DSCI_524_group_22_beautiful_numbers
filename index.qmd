@@ -138,8 +138,6 @@ Documentation is **automatically deployed** to GitHub Pages via GitHub Actions w
 quarto publish gh-pages
 ```
 
-View the deployed documentation at: <https://https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/>
-
 ## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
