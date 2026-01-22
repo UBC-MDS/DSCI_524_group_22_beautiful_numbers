@@ -1,31 +1,40 @@
-name: 03-quartodoc
+name: quartodoc
 
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
 
 jobs:
   build-docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
           pip install -e ".[docs]"
-          #pip install quartodoc
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Build quartodoc
         run: |
-          quartodoc build --verbose
+          python -m quartodoc build --verbose
 
       - name: Render Quarto site
         run: |
           quarto render
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
