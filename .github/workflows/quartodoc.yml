@@ -3,7 +3,7 @@ name: quartodoc
 on:
   workflow_dispatch:
   push:
-    branches: ["main"]
+    branches: [documentation]
 
 permissions:
   contents: write
