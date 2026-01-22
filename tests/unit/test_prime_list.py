@@ -13,6 +13,8 @@ def test_prime_list_int_error():
         prime_list([6.0])
     with pytest.raises(Exception, match="The input must be an integer"):
         prime_list("6")
+    with pytest.raises(Exception, match="The input must be an integer"):
+        prime_list(None)
 
 def test_prime_list_negative_error():
     """Confirm that inputting a negative number will raise an error"""
@@ -36,3 +38,38 @@ def test_boolean_input():
 
     with pytest.raises(Exception, match="The input must be an integer"):
         prime_list(True)
+        
+def test_prime_list_zero():
+    """Confirm that the output of prime_list(0) is an empty list"""
+    assert prime_list(0) == []
+    
+def test_prime_list_large_prime():
+    """Test with a larger prime number to ensure it's included"""
+    result = prime_list(97)
+    assert 97 in result
+    assert result[-1] == 97
+    
+def test_prime_list_large_prime():
+    """Test with a larger prime number to ensure it's included"""
+    result = prime_list(97)
+    assert 97 in result
+    assert result[-1] == 97
+
+def test_prime_list_order():
+    """Confirm primes are returned in ascending order"""
+    result = prime_list(50)
+    assert result == sorted(result)
+
+def test_prime_list_all_elements_prime():
+    """Verify every element in the output is actually prime"""
+    def is_prime(num):
+        if num < 2:
+            return False
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+    
+    result = prime_list(50)
+    assert all(is_prime(p) for p in result)
+    
