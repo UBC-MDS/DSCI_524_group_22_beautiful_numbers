@@ -68,7 +68,10 @@ pip install --index-url https://test.pypi.org/simple/ beautifulnumbers
 ## Usage
 
 ```python
-from beautifulnumbers import prime_list, binary, hexa, fib_seq
+from beautifulnumbers.binary import binary
+from beautifulnumbers.hexa import hexa
+from beautifulnumbers.fib_seq import fib_seq
+from beautifulnumbers.prime_list import prime_list
 
 # Generate prime numbers up to 20
 primes = prime_list(20)
@@ -100,7 +103,7 @@ pytest
 Run tests with coverage report:
 
 ```bash
-pytest --cov=src/beautifulnumbers --cov-report=html
+pytest --cov=beautifulnumbers --cov-report=term-missing --cov-report=xml
 ```
 
 ### Building Documentation
