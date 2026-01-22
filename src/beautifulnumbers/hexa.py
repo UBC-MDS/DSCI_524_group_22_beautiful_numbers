@@ -14,9 +14,9 @@ def hexa(number):
 
     Examples
     --------
-    >>> convert_to_hex(10)
+    >>> hexa(10)
     'A'
-    >>> convert_to_hex(255)
+    >>> hexa(255)
     'FF'
     """
     if not isinstance(number, int):
