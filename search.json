@@ -137,23 +137,79 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to BeautifulNumbers’s Documentation ’",
+    "title": "Beautiful Numbers",
     "section": "",
-    "text": ":maxdepth: 2 :hidden: :caption: Contents:\nHome \n\nThis is the landing page of your docs. you can update it as you’d like to. This documentation example uses myst markdown as the primary documentation syntax.\n:::{button-link} https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html :color: primary :class: sd-rounded-pill float-left\nLearn more about myst in our pyOpenSci packaging guide.\n:::\nMyst is a version of markdown that has more formatting flexibility. This is what a sphinx directive looks like using myst markdown formatting:\n:::{toctree}\n:maxdepth: 2\n:caption: Contents:\n:::\nIf you see syntax like the syntax below, you are looking at rst.\n.. toctree::\n   :maxdepth: 2\n   :caption: Contents:\n\n\n\n\nCopyright © 2026 Jade Chen; Grigory Artazyan; Jackson Lu; Michael Oyatsi.\nFree software distributed under the MIT License."
+    "text": "Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan\n\n\n\n\nBeautiful Numbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies.\n\n\n\n\nprime_list For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography.\nbinary Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.\nhexa Converts a non-negative integer into its hexadecimal representation, returned as a string. Useful for understanding base-16 representations.\nfib_seq Generates the Fibonacci sequence from 1 up to a given positive integer n. The output illustrates the recursive growth pattern of the sequence.\n\n\n\n\n\n\nInstall the package from Test PyPI:\npip install --index-url https://test.pypi.org/simple/beautifulnumbers\nPackage URL: https://test.pypi.org/project/beautifulnumbers/\n\n\n\n\nClone the repository:\ngit clone https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers.git\ncd DSCI_524_group_22_beautiful_numbers\nSet up the development environment:\nCreate a conda environment (recommended):\nconda create -n beautifulnumbers python=3.12\nconda activate beautifulnumbers\nInstall the package in editable mode with all development dependencies:\npip install -e \".[dev,tests,docs,build]\"\nThis installs:\n\nThe package itself in editable mode (-e)\nDevelopment tools (dev): hatch, pre-commit\nTesting tools (tests): pytest, pytest-cov, etc.\nDocumentation tools (docs): quartodoc\nBuild tools (build): pip-audit, twine\n\n\n\n\n\n\nfrom beautifulnumbers.binary import binary\nfrom beautifulnumbers.hexa import hexa\nfrom beautifulnumbers.fib_seq import fib_seq\nfrom beautifulnumbers.prime_list import prime_list\n\n# Generate prime numbers up to 20\nprimes = prime_list(20)\nprint(primes)  # [2, 3, 5, 7, 11, 13, 17, 19]\n\n# Convert to binary\nbin_str = binary(42)\nprint(bin_str)  # \"101010\"\n\n# Convert to hexadecimal\nhex_str = hexa(255)\nprint(hex_str)  # \"FF\"\n\n# Generate Fibonacci sequence up to 10\nfib = fib_seq(10)\nprint(fib)  # [1, 1, 2, 3, 5, 8]\n\n\n\n\n\nRun tests with coverage report:\npytest --cov=beautifulnumbers --cov-report=term-missing --cov-report=xml\n\n\n\n\nBuild the API reference with quartodoc:\nquartodoc build --verbose\nRender the Quarto site:\nquarto render\nPreview locally:\nquarto preview\n\n\n\n\nDocumentation is automatically deployed to GitHub Pages via GitHub Actions when you push to the main branch.\nWorkflow\n\nPush changes to main\nGitHub Actions workflow (.github/workflows/quartodoc.yml) runs automatically:\n\nInstalls dependencies\nBuilds documentation with quartodoc\nRenders the Quarto site\nPublishes to gh-pages branch\n\n\nManual deployment (first-time setup only):\nquarto publish gh-pages\nView the deployed documentation at: https://https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/\n\n\n\n\nWe welcome contributions! Please see CONTRIBUTING.md for guidelines.\n\n\n\nPlease note that this project is released with a Code of Conduct. By participating in this project you agree to abide by its terms.\n\n\n\nThis project is licensed under the MIT License - see the LICENSE file for details.\n\n\n\nMuch of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about."
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Welcome to BeautifulNumbers’s Documentation ’",
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Beautiful Numbers",
     "section": "",
-    "text": ":maxdepth: 2 :hidden: :caption: Contents:\nHome \n\nThis is the landing page of your docs. you can update it as you’d like to. This documentation example uses myst markdown as the primary documentation syntax.\n:::{button-link} https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html :color: primary :class: sd-rounded-pill float-left\nLearn more about myst in our pyOpenSci packaging guide.\n:::\nMyst is a version of markdown that has more formatting flexibility. This is what a sphinx directive looks like using myst markdown formatting:\n:::{toctree}\n:maxdepth: 2\n:caption: Contents:\n:::\nIf you see syntax like the syntax below, you are looking at rst.\n.. toctree::\n   :maxdepth: 2\n   :caption: Contents:"
+    "text": "Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan"
   },
   {
-    "objectID": "index.html#copyright",
-    "href": "index.html#copyright",
-    "title": "Welcome to BeautifulNumbers’s Documentation ’",
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "Beautiful Numbers",
     "section": "",
-    "text": "Copyright © 2026 Jade Chen; Grigory Artazyan; Jackson Lu; Michael Oyatsi.\nFree software distributed under the MIT License."
+    "text": "Beautiful Numbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies."
+  },
+  {
+    "objectID": "index.html#included-functions",
+    "href": "index.html#included-functions",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "prime_list For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography.\nbinary Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.\nhexa Converts a non-negative integer into its hexadecimal representation, returned as a string. Useful for understanding base-16 representations.\nfib_seq Generates the Fibonacci sequence from 1 up to a given positive integer n. The output illustrates the recursive growth pattern of the sequence."
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "Install the package from Test PyPI:\npip install --index-url https://test.pypi.org/simple/beautifulnumbers\nPackage URL: https://test.pypi.org/project/beautifulnumbers/\n\n\n\n\nClone the repository:\ngit clone https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers.git\ncd DSCI_524_group_22_beautiful_numbers\nSet up the development environment:\nCreate a conda environment (recommended):\nconda create -n beautifulnumbers python=3.12\nconda activate beautifulnumbers\nInstall the package in editable mode with all development dependencies:\npip install -e \".[dev,tests,docs,build]\"\nThis installs:\n\nThe package itself in editable mode (-e)\nDevelopment tools (dev): hatch, pre-commit\nTesting tools (tests): pytest, pytest-cov, etc.\nDocumentation tools (docs): quartodoc\nBuild tools (build): pip-audit, twine"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "from beautifulnumbers.binary import binary\nfrom beautifulnumbers.hexa import hexa\nfrom beautifulnumbers.fib_seq import fib_seq\nfrom beautifulnumbers.prime_list import prime_list\n\n# Generate prime numbers up to 20\nprimes = prime_list(20)\nprint(primes)  # [2, 3, 5, 7, 11, 13, 17, 19]\n\n# Convert to binary\nbin_str = binary(42)\nprint(bin_str)  # \"101010\"\n\n# Convert to hexadecimal\nhex_str = hexa(255)\nprint(hex_str)  # \"FF\"\n\n# Generate Fibonacci sequence up to 10\nfib = fib_seq(10)\nprint(fib)  # [1, 1, 2, 3, 5, 8]"
+  },
+  {
+    "objectID": "index.html#development-workflow",
+    "href": "index.html#development-workflow",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "Run tests with coverage report:\npytest --cov=beautifulnumbers --cov-report=term-missing --cov-report=xml\n\n\n\n\nBuild the API reference with quartodoc:\nquartodoc build --verbose\nRender the Quarto site:\nquarto render\nPreview locally:\nquarto preview\n\n\n\n\nDocumentation is automatically deployed to GitHub Pages via GitHub Actions when you push to the main branch.\nWorkflow\n\nPush changes to main\nGitHub Actions workflow (.github/workflows/quartodoc.yml) runs automatically:\n\nInstalls dependencies\nBuilds documentation with quartodoc\nRenders the Quarto site\nPublishes to gh-pages branch\n\n\nManual deployment (first-time setup only):\nquarto publish gh-pages\nView the deployed documentation at: https://https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/"
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "We welcome contributions! Please see CONTRIBUTING.md for guidelines."
+  },
+  {
+    "objectID": "index.html#code-of-conduct",
+    "href": "index.html#code-of-conduct",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "Please note that this project is released with a Code of Conduct. By participating in this project you agree to abide by its terms."
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "This project is licensed under the MIT License - see the LICENSE file for details."
+  },
+  {
+    "objectID": "index.html#contribution-to-python-ecosystem",
+    "href": "index.html#contribution-to-python-ecosystem",
+    "title": "Beautiful Numbers",
+    "section": "",
+    "text": "Much of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about."
   },
   {
     "objectID": "DEVELOPMENT.html",

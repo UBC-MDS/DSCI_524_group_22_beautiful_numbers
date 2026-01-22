@@ -147,34 +147,133 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="welcome-to-beautifulnumberss-documentation" class="level1">
-<h1>Welcome to BeautifulNumbers’s Documentation ’</h1>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<div class="{toctree}">
-<p>:maxdepth: 2 :hidden: :caption: Contents:</p>
-<p>Home <self></self></p>
-</div>
-<p>This is the landing page of your docs. you can update it as you’d like to. This documentation example uses myst markdown as the primary documentation syntax.</p>
-<p>:::{button-link} <a href="https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html" class="uri">https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/myst-markdown-rst-doc-syntax.html</a> :color: primary :class: sd-rounded-pill float-left</p>
-<p>Learn more about myst in our pyOpenSci packaging guide.</p>
-<p>:::</p>
-<p>Myst is a version of markdown that has more formatting flexibility. This is what a sphinx directive looks like using myst markdown formatting:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>:::{toctree}</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="sc">:maxdepth:</span> 2</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">:caption:</span> Contents:</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If you see syntax like the syntax below, you are looking at rst.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode rst code-with-copy"><code class="sourceCode rest"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">.. toctree::</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">:maxdepth:</span> 2</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">:caption:</span> Contents:</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="copyright" class="level2">
-<h2 class="anchored" data-anchor-id="copyright">Copyright</h2>
+<section id="beautiful-numbers" class="level1">
+<h1>Beautiful Numbers</h1>
+<section id="contributors" class="level2">
+<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
 <ul>
-<li>Copyright © 2026 Jade Chen; Grigory Artazyan; Jackson Lu; Michael Oyatsi.</li>
-<li>Free software distributed under the MIT License.</li>
+<li>Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan</li>
 </ul>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Beautiful Numbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies.</p>
+</section>
+<section id="included-functions" class="level2">
+<h2 class="anchored" data-anchor-id="included-functions">Included Functions</h2>
+<ul>
+<li><p><code>prime_list</code> For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography.</p></li>
+<li><p><code>binary</code> Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.</p></li>
+<li><p><code>hexa</code> Converts a non-negative integer into its hexadecimal representation, returned as a string. Useful for understanding base-16 representations.</p></li>
+<li><p><code>fib_seq</code> Generates the Fibonacci sequence from 1 up to a given positive integer n.&nbsp;The output illustrates the recursive growth pattern of the sequence.</p></li>
+</ul>
+</section>
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<section id="for-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-users">For Users</h3>
+<p>Install the package from Test PyPI:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--index-url</span> https://test.pypi.org/simple/beautifulnumbers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Package URL</strong>: https://test.pypi.org/project/beautifulnumbers/</p>
+</section>
+<section id="for-developers" class="level3">
+<h3 class="anchored" data-anchor-id="for-developers">For Developers</h3>
+<ol type="1">
+<li><p><strong>Clone the repository</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> DSCI_524_group_22_beautiful_numbers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Set up the development environment</strong>:</p>
+<p>Create a conda environment (recommended):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> beautifulnumbers python=3.12</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate beautifulnumbers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Install the package in editable mode with all development dependencies</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> <span class="st">".[dev,tests,docs,build]"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This installs:</p>
+<ul>
+<li>The package itself in editable mode (<code>-e</code>)</li>
+<li>Development tools (<code>dev</code>): hatch, pre-commit</li>
+<li>Testing tools (<code>tests</code>): pytest, pytest-cov, etc.</li>
+<li>Documentation tools (<code>docs</code>): quartodoc</li>
+<li>Build tools (<code>build</code>): pip-audit, twine</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="usage" class="level2">
+<h2 class="anchored" data-anchor-id="usage">Usage</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> beautifulnumbers.binary <span class="im">import</span> binary</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> beautifulnumbers.hexa <span class="im">import</span> hexa</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> beautifulnumbers.fib_seq <span class="im">import</span> fib_seq</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> beautifulnumbers.prime_list <span class="im">import</span> prime_list</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate prime numbers up to 20</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>primes <span class="op">=</span> prime_list(<span class="dv">20</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(primes)  <span class="co"># [2, 3, 5, 7, 11, 13, 17, 19]</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to binary</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>bin_str <span class="op">=</span> binary(<span class="dv">42</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bin_str)  <span class="co"># "101010"</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to hexadecimal</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>hex_str <span class="op">=</span> hexa(<span class="dv">255</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(hex_str)  <span class="co"># "FF"</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Fibonacci sequence up to 10</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>fib <span class="op">=</span> fib_seq(<span class="dv">10</span>)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fib)  <span class="co"># [1, 1, 2, 3, 5, 8]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="development-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="development-workflow">Development Workflow</h2>
+<section id="running-tests" class="level3">
+<h3 class="anchored" data-anchor-id="running-tests">Running Tests</h3>
+<p>Run tests with coverage report:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span> <span class="at">--cov</span><span class="op">=</span>beautifulnumbers <span class="at">--cov-report</span><span class="op">=</span>term-missing <span class="at">--cov-report</span><span class="op">=</span>xml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="building-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="building-documentation">Building Documentation</h3>
+<ol type="1">
+<li><p><strong>Build the API reference with quartodoc</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quartodoc</span> build <span class="at">--verbose</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Render the Quarto site</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Preview locally</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+<section id="deploying-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="deploying-documentation">Deploying Documentation</h3>
+<p>Documentation is <strong>automatically deployed</strong> to GitHub Pages via GitHub Actions when you push to the <code>main</code> branch.</p>
+<p><strong>Workflow</strong></p>
+<ol type="1">
+<li><p>Push changes to <code>main</code></p></li>
+<li><p>GitHub Actions workflow (<code>.github/workflows/quartodoc.yml</code>) runs automatically:</p>
+<ul>
+<li>Installs dependencies</li>
+<li>Builds documentation with quartodoc</li>
+<li>Renders the Quarto site</li>
+<li>Publishes to <code>gh-pages</code> branch</li>
+</ul></li>
+</ol>
+<p><strong>Manual deployment</strong> (first-time setup only):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>View the deployed documentation at: <a href="https://https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/" class="uri">https://https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/</a></p>
+</section>
+</section>
+<section id="contributing" class="level2">
+<h2 class="anchored" data-anchor-id="contributing">Contributing</h2>
+<p>We welcome contributions! Please see <a href="./CONTRIBUTING.html">CONTRIBUTING.md</a> for guidelines.</p>
+</section>
+<section id="code-of-conduct" class="level2">
+<h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
+<p>Please note that this project is released with a <a href="./CODE_OF_CONDUCT.html">Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
+</section>
+<section id="license" class="level2">
+<h2 class="anchored" data-anchor-id="license">License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+</section>
+<section id="contribution-to-python-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="contribution-to-python-ecosystem">Contribution to Python Ecosystem</h2>
+<p>Much of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about.</p>
 
 
 </section>
