@@ -1,3 +1,12 @@
+"""
+Utilities for generating Fibonacci sequences.
+
+This module provides a function for constructing the Fibonacci sequence
+up to a specified length using a bottom-up iterative approach, with
+explicit input validation and clear base case handling.
+"""
+
+
 def fib_seq(n):
     """
     Generates the Fibonacci sequence from 1 up to a given positive integer n.
