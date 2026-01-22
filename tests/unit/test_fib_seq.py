@@ -34,3 +34,14 @@ def test_fib_seq_correct_content():
     # each element after the first two should be the sum of the previous two
     for i in range(2, len(result)):
         assert result[i] == result[i - 1] + result[i - 2]
+
+def test_fib_seq_large_n_last_value():
+    """Check last value for a larger n to ensure scaling and correctness"""
+    # fib_seq is 1-indexed with [1, 1, 2, ...], so n=30 ends with F30 = 832040
+    assert fib_seq(30)[-1] == 832040
+
+
+def test_fib_seq_monotonic_non_decreasing():
+    """Check sequence is non-decreasing for n >= 2"""
+    result = fib_seq(25)
+    assert all(result[i] >= result[i - 1] for i in range(1, len(result)))
