@@ -1,4 +1,4 @@
-# Beautiful Numbers
+# Beautifulnumbers
 
 [![Documentation](https://img.shields.io/badge/docs-gh--pages-blue)](https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/)
 
@@ -8,7 +8,7 @@
 
 ## Summary
 
-Beautiful Numbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies.
+Beautifulnumbers is a small Python package that provides utilities for exploring common numerical properties and representations. The goal of the project is educational: to make it easy to inspect whether numbers have certain mathematical properties or to view them in alternative bases without relying on heavy external dependencies.
 
 ## Documentation
 
