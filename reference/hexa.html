@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>contributing – Beautiful Numbers</title>
+<title>hexa – Beautiful Numbers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,17 +105,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="reference/_styles-quartodoc.css">
+<link rel="stylesheet" href="../reference/_styles-quartodoc.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Beautiful Numbers</span>
     </a>
   </div>
@@ -91,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./reference/index.html"> 
+    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
 <span class="menu-text">Reference</span></a>
   </li>  
 </ul>
@@ -100,72 +135,150 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/binary.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/hexa.html">hexa</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Function reference</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/binary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">binary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/hexa.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">hexa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/fib_seq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">fib_seq</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/prime_list.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">prime_list</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/binary.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/hexa.html">hexa</a></li></ol></nav></header>
 
 
 
 
-<section id="contributing" class="level1">
-<h1>Contributing</h1>
-<p>Contributions of all kinds are welcome here, and they are greatly appreciated! Every little bit helps, and credit will always be given.</p>
-<section id="report-bugs" class="level3">
-<h3 class="anchored" data-anchor-id="report-bugs">Report Bugs</h3>
-<p>Report bugs at https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues.</p>
-<p><strong>If you are reporting a bug, please follow the template guidelines. The more detailed your report, the easier and thus faster we can help you.</strong></p>
+<section id="beautifulnumbers.hexa" class="level1">
+<h1>hexa</h1>
+<p><code>hexa</code></p>
+<p>Utilities for base conversion.</p>
+<p>This module provides a function for converting non-negative integers from decimal (base-10) representation into hexadecimal (base-16), returning the result as an uppercase string.</p>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#beautifulnumbers.hexa.hexa">hexa</a></td>
+<td>Converts a decimal (base-10) number into hexadecimal (base-16).</td>
+</tr>
+</tbody>
+</table>
+<section id="beautifulnumbers.hexa.hexa" class="level3">
+<h3 class="anchored" data-anchor-id="beautifulnumbers.hexa.hexa">hexa</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>hexa.hexa(number)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Converts a decimal (base-10) number into hexadecimal (base-16).</p>
+<section id="parameters" class="level4 doc-section doc-section-parameters">
+<h4 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>number</td>
+<td>int</td>
+<td>The decimal number to convert.</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="fix-bugs" class="level3">
-<h3 class="anchored" data-anchor-id="fix-bugs">Fix Bugs</h3>
-<p>Look through the GitHub issues for bugs. Anything labelled with <code>bug</code> and <code>help wanted</code> is open to whoever wants to implement it. When you decide to work on such an issue, please assign yourself to it and add a comment that you’ll be working on that, too. If you see another issue without the <code>help wanted</code> label, just post a comment, the maintainers are usually happy for any support that they can get.</p>
+<section id="returns" class="level4 doc-section doc-section-returns">
+<h4 class="doc-section doc-section-returns anchored" data-anchor-id="returns">Returns</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>str</td>
+<td>The hexadecimal representation of the number.</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="implement-features" class="level3">
-<h3 class="anchored" data-anchor-id="implement-features">Implement Features</h3>
-<p>Look through the GitHub issues for features. Anything labelled with <code>enhancement</code> and <code>help wanted</code> is open to whoever wants to implement it. As for <a href="#fix-bugs">fixing bugs</a>, please assign yourself to the issue and add a comment that you’ll be working on that, too. If another enhancement catches your fancy, but it doesn’t have the <code>help wanted</code> label, just post a comment, the maintainers are usually happy for any support that they can get.</p>
-</section>
-<section id="write-documentation" class="level3">
-<h3 class="anchored" data-anchor-id="write-documentation">Write Documentation</h3>
-<p>BeautifulNumbers could always use more documentation, whether as part of the official documentation, in docstrings, or even on the web in blog posts, articles, and such. Just <a href="https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues">open an issue</a> to let us know what you will be working on so that we can provide you with guidance.</p>
-</section>
-<section id="submit-feedback" class="level3">
-<h3 class="anchored" data-anchor-id="submit-feedback">Submit Feedback</h3>
-<p>The best way to send feedback is to file an issue at https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/issues. If your feedback fits the format of one of the issue templates, please use that. Remember that this is a volunteer-driven project and everybody has limited time.</p>
-</section>
-<section id="get-started" class="level2">
-<h2 class="anchored" data-anchor-id="get-started">Get Started!</h2>
-<p>Ready to contribute? Here’s how to set up BeautifulNumbers for local development.</p>
-<ol type="1">
-<li><p>Fork the https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers repository on GitHub.</p></li>
-<li><p>Clone your fork locally (<em>if you want to work locally</em>)</p>
-<pre class="shell"><code>https://github.com/your_name_here/DSCI_524_group_22_beautiful_numbers/issues</code></pre></li>
-<li><p><a href="https://hatch.pypa.io/latest/install/">Install hatch</a>.</p></li>
-<li><p>Create a branch for local development using the default branch (typically <code>main</code>) as a starting point. Use <code>fix</code> or <code>feat</code> as a prefix for your branch name.</p>
-<pre class="shell"><code>git checkout main
-git checkout -b fix-name-of-your-bugfix</code></pre>
-<p>Now you can make your changes locally.</p></li>
-<li><p>When you’re done making changes, apply the quality assurance tools and check that your changes pass our test suite. This is all included with tox</p>
-<pre class="shell"><code>hatch run test:run</code></pre></li>
-<li><p>Commit your changes and push your branch to GitHub. Please use <a href="https://www.conventionalcommits.org/">semantic commit messages</a>.</p>
-<pre class="shell"><code>git add .
-git commit -m "fix: summarize your changes"
-git push -u origin fix-name-of-your-bugfix</code></pre></li>
-<li><p>Open the link displayed in the message when pushing your new branch in order to submit a pull request.</p></li>
-</ol>
-<section id="pull-request-guidelines" class="level3">
-<h3 class="anchored" data-anchor-id="pull-request-guidelines">Pull Request Guidelines</h3>
-<p>Before you submit a pull request, check that it meets these guidelines:</p>
-<ol type="1">
-<li>The pull request should include tests.</li>
-<li>If the pull request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring.</li>
-<li>Your pull request will automatically be checked by the full test suite. It needs to pass all of them before it can be considered for merging.</li>
-</ol>
+<section id="examples" class="level4 doc-section doc-section-examples">
+<h4 class="doc-section doc-section-examples anchored" data-anchor-id="examples">Examples</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hexa(<span class="dv">10</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">'A'</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> hexa(<span class="dv">255</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">'FF'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 </section>
 </section>
 </section>
