@@ -78,7 +78,7 @@ def prime_list(n):
         numbers[1] = False
         
         for num in range (2, round((n) ** 0.5) + 1):
-            if numbers[num] == True:
+            if numbers[num]:
                 increment = 0
                 j = num ** 2 + increment * num
                 while j <= n:
@@ -87,6 +87,6 @@ def prime_list(n):
                     j = num ** 2 + increment * num
         
         for prime in range(n + 1):
-            if numbers[prime] == True:
+            if numbers[prime]:
                 prime_list.append(prime)
     return prime_list 
