@@ -32,7 +32,7 @@ Beautiful Numbers is a small Python package that provides utilities for explorin
 Install the package from Test PyPI:
 
 ```bash
-pip install --index-url https://test.pypi.org/simple/ beautifulnumbers
+pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 ```
 
 **Package URL**: https://test.pypi.org/project/beautifulnumbers/
