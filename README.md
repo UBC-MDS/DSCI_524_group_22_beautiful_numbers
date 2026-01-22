@@ -12,12 +12,12 @@ Beautiful Numbers is a small Python package that provides utilities for explorin
 
 ## Documentation
 
-- **Landing Page**: https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/
-- **API Reference**: https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/reference/
+-   **Landing Page**: https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/
+-   **API Reference**: https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/reference/
 
 ## Included Functions
 
--   `prime_list` For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography. 
+-   `prime_list` For a given input number, this function generates a list of prime numbers up to and including the input number. This can be used for identifying prime candidates for use in cryptography.
 
 -   `binary` Converts a non-negative integer into its binary representation, returned as a string. Useful for understanding base-2 representations and bit-level reasoning.
 
@@ -31,7 +31,7 @@ Beautiful Numbers is a small Python package that provides utilities for explorin
 
 Install the package from Test PyPI:
 
-```bash
+``` bash
 pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 ```
 
@@ -39,35 +39,39 @@ pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 
 ### For Developers
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers.git
-   cd DSCI_524_group_22_beautiful_numbers
-   ```
+1.  **Clone the repository**:
 
-2. **Set up the development environment**:
-   
-   Create a conda environment (recommended):
-   ```bash
-   conda create -n beautifulnumbers python=3.12
-   conda activate beautifulnumbers
-   ```
+    ``` bash
+    git clone https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers.git
+    cd DSCI_524_group_22_beautiful_numbers
+    ```
 
-3. **Install the package in editable mode with all development dependencies**:
-   ```bash
-   pip install -e ".[dev,tests,docs,build]"
-   ```
+2.  **Set up the development environment**:
 
-   This installs:
-   - The package itself in editable mode (`-e`)
-   - Development tools (`dev`): hatch, pre-commit
-   - Testing tools (`tests`): pytest, pytest-cov, etc.
-   - Documentation tools (`docs`): quartodoc
-   - Build tools (`build`): pip-audit, twine
+    Create a conda environment (recommended):
+
+    ``` bash
+    conda create -n beautifulnumbers python=3.12
+    conda activate beautifulnumbers
+    ```
+
+3.  **Install the package in editable mode with all development dependencies**:
+
+    ``` bash
+    pip install -e ".[dev,tests,docs,build]"
+    ```
+
+    This installs:
+
+    -   The package itself in editable mode (`-e`)
+    -   Development tools (`dev`): hatch, pre-commit
+    -   Testing tools (`tests`): pytest, pytest-cov, etc.
+    -   Documentation tools (`docs`): quartodoc
+    -   Build tools (`build`): pip-audit, twine
 
 ## Usage
 
-```python
+``` python
 from beautifulnumbers.binary import binary
 from beautifulnumbers.hexa import hexa
 from beautifulnumbers.fib_seq import fib_seq
@@ -96,26 +100,29 @@ print(fib)  # [1, 1, 2, 3, 5, 8]
 
 Run tests with coverage report:
 
-```bash
+``` bash
 pytest --cov=beautifulnumbers --cov-report=term-missing --cov-report=xml
 ```
 
 ### Building Documentation
 
-1. **Build the API reference with quartodoc**:
-   ```bash
-   quartodoc build --verbose
-   ```
+1.  **Build the API reference with quartodoc**:
 
-2. **Render the Quarto site**:
-   ```bash
-   quarto render
-   ```
+    ``` bash
+    quartodoc build --verbose
+    ```
 
-3. **Preview locally**:
-   ```bash
-   quarto preview
-   ```
+2.  **Render the Quarto site**:
+
+    ``` bash
+    quarto render
+    ```
+
+3.  **Preview locally**:
+
+    ``` bash
+    quarto preview
+    ```
 
 ### Deploying Documentation
 
@@ -123,20 +130,22 @@ Documentation is **automatically deployed** to GitHub Pages via GitHub Actions w
 
 **Workflow**:
 
-1. Push changes to `main`
+1.  Push changes to `main`
 
-2. GitHub Actions workflow (`.github/workflows/quartodoc.yml`) runs automatically:
-   - Installs dependencies
-   - Builds documentation with quartodoc
-   - Renders the Quarto site
-   - Publishes to `gh-pages` branch
+2.  GitHub Actions workflow (`.github/workflows/quartodoc.yml`) runs automatically:
+
+    -   Installs dependencies
+    -   Builds documentation with quartodoc
+    -   Renders the Quarto site
+    -   Publishes to `gh-pages` branch
 
 **Manual deployment** (first-time setup only):
-```bash
+
+``` bash
 quarto publish gh-pages
 ```
 
-View the deployed documentation at: https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/
+View the deployed documentation [here](https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/).
 
 ## Contributing
 
