@@ -122,7 +122,9 @@ pytest --cov=beautifulnumbers --cov-report=term-missing --cov-report=xml
 Documentation is **automatically deployed** to GitHub Pages via GitHub Actions when you push to the `main` branch.
 
 **Workflow**:
+
 1. Push changes to `main`
+
 2. GitHub Actions workflow (`.github/workflows/quartodoc.yml`) runs automatically:
    - Installs dependencies
    - Builds documentation with quartodoc
