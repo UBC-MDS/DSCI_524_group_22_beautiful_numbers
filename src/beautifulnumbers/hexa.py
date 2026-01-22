@@ -1,3 +1,12 @@
+"""
+Utilities for base conversion.
+
+This module provides a function for converting non-negative integers
+from decimal (base-10) representation into hexadecimal (base-16),
+returning the result as an uppercase string.
+"""
+
+
 def hexa(number):
     """
     Converts a decimal (base-10) number into hexadecimal (base-16).
@@ -14,9 +23,9 @@ def hexa(number):
 
     Examples
     --------
-    >>> convert_to_hex(10)
+    >>> hexa(10)
     'A'
-    >>> convert_to_hex(255)
+    >>> hexa(255)
     'FF'
     """
     if not isinstance(number, int):

@@ -1,3 +1,13 @@
+"""
+Utilities for prime number generation.
+
+This module provides a function for generating all prime numbers up to
+and including a given upper bound using the Sieve of Eratosthenes,
+with attention to algorithmic efficiency and edge case handling.
+"""
+
+
+
 def prime_list(n):
     """
     Generate a list of all prime numbers up to and including n.

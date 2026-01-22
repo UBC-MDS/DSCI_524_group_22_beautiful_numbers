@@ -1,0 +1,39 @@
+name: quartodoc
+
+on:
+  push:
+    branches: [documentation]
+
+permissions:
+  contents: write
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -e ".[docs]"
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Build quartodoc
+        run: |
+          python -m quartodoc build --verbose
+
+      - name: Render Quarto site
+        run: |
+          quarto render
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
