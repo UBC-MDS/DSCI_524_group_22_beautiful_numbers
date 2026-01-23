@@ -53,3 +53,10 @@ def test_hexa_non_integer_raises_error():
 
     with pytest.raises(TypeError, match="must be an integer"):
         hexa(None)
+
+def test_hexa_mixed_digits_and_letters():
+    """Test numbers that produce a mix of digits (0-9) and letters (A-F)."""
+    assert hexa(26) == "1A"      # 16 + 10
+    assert hexa(171) == "AB"     # 10*16 + 11
+    assert hexa(3039) == "BDF"   # mix of letters only
+    assert hexa(2748) == "ABC"   # sequential letters
