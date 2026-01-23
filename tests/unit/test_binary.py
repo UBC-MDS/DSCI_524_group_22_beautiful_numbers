@@ -51,3 +51,11 @@ def test_binary_very_large_number():
     result = binary(1048576)
     assert result == "100000000000000000000"
     assert len(result) == 21
+
+
+def test_binary_consecutive_numbers():
+    """Test consecutive numbers to verify bit patterns."""
+    assert binary(7) == "111"
+    assert binary(63) == "111111"
+    assert binary(127) == "1111111"
+    assert binary(255) == "11111111"
