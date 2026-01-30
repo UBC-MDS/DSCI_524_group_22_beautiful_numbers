@@ -76,10 +76,8 @@ pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 ## Usage
 
 ``` python
-from beautifulnumbers.binary import binary
-from beautifulnumbers.hexa import hexa
-from beautifulnumbers.fib_seq import fib_seq
-from beautifulnumbers.prime_list import prime_list
+# Import all functions at once
+from beautifulnumbers import binary, fib_seq, hexa, prime_list
 
 # Generate prime numbers up to 20
 primes = prime_list(20)
