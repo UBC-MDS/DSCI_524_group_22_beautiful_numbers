@@ -5,6 +5,7 @@
 ## Contributors
 
 -   Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan
+-   Master of Data Science 10th cohort Students
 
 ## Summary
 
