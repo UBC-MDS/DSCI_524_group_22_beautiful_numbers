@@ -4,7 +4,7 @@
 |--------|--------|
 | Documentation | [![Documentation](https://img.shields.io/badge/docs-gh--pages-blue)](https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/) |
 | Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) |
-| CI  | [![CI](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/actions/workflows/deploy.yml/badge.svg)](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/blob/e32a2d8855564d22a2f04a4987589a58d7312e2b/.github/workflows/deploy.yml)
+| CI  | [![CI](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/actions/workflows/build.yml/badge.svg)](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/actions/workflows/build.yml/badge.svg)
 
 ## Contributors
 
