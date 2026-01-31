@@ -64,7 +64,7 @@ pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 
 ## Usage
 
-``` python
+``` {python}
 from beautifulnumbers.binary import binary
 from beautifulnumbers.hexa import hexa
 from beautifulnumbers.fib_seq import fib_seq
