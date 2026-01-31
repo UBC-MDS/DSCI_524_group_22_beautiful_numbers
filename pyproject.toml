@@ -56,7 +56,7 @@ dev = [
 ]
 
 docs = [
-    " quartodoc"
+    "quartodoc"
 ]
 
 build = [
