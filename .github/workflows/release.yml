@@ -1,0 +1,42 @@
+name: Release to TestPyPI
+on:
+  push:
+    tags:
+      - "v*"  # Triggers only when you push a tag like v0.1.0
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    name: Build and Publish to TestPyPI
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Check out the code AND the git history (tags)
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # <--- CRITICAL: Required for Hatch to see the tag!
+
+      # 2. Set up Python 3.13
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # 3. Install Hatch and other dev dependencies
+      - name: Install dev deps
+        run: pip install -e ".[dev]"
+
+      # 4. Build the package
+      # hatch gets pyproject.toml instructions to get versions from vcs
+      # Hatch automatically detects the tag (e.g. v0.1.0) and generates the version file
+      - name: Build package
+        run: hatch build
+
+      # 5. Publish to TestPyPI (Legacy Mode)
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository-url: https://test.pypi.org/legacy/
+          verbose: true
+          #skip-existing: true
