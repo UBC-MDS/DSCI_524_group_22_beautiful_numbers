@@ -10,7 +10,7 @@ with attention to algorithmic efficiency and edge case handling.
 
 def prime_list(n):
     """
-    Generate a list of all prime numbers up to and including n.
+    > Generate a list of all prime numbers up to and including n.
     
     This function uses the Sieve of Eratosthenes algorithm to efficiently
     find all prime numbers in the range [2, n].
