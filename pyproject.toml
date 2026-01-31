@@ -88,11 +88,11 @@ only-packages = true
 [tool.hatch.build.targets.wheel]
 packages = ["src/beautifulnumbers"]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
+# [tool.setuptools]
+# package-dir = {"" = "src"}
 
-[tool.setuptools.packages.find]
-where = ["src"]
+# [tool.setuptools.packages.find]
+# where = ["src"]
 
 ###### git tag-based version bump #####
 
