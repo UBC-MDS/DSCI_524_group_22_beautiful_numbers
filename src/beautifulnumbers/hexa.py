@@ -9,7 +9,7 @@ returning the result as an uppercase string.
 
 def hexa(number):
     """
-    > Converts a decimal (base-10) number into hexadecimal (base-16).
+    >> Converts a decimal (base-10) number into hexadecimal (base-16).
 
     Parameters
     ----------

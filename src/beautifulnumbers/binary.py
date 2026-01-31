@@ -8,7 +8,7 @@ Useful for understanding base-2 representations and bit-level reasoning.
 
 def binary(num):
     """
-    > Covert whole number to binary representation.
+    >> Covert whole number to binary representation.
 
     Parameters
     ----------

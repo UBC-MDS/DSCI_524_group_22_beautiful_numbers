@@ -9,7 +9,7 @@ explicit input validation and clear base case handling.
 
 def fib_seq(n):
     """
-    > Generates the Fibonacci sequence from 1 up to a given positive integer n.
+    >> Generates the Fibonacci sequence from 1 up to a given positive integer n.
 
     Parameters
     ----------
