@@ -4,7 +4,7 @@
 
 [build-system]
 build-backend = "hatchling.build"
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 
 ################################################################################
 # Project Configuration
