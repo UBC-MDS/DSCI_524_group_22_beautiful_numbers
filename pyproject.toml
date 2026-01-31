@@ -88,12 +88,6 @@ only-packages = true
 [tool.hatch.build.targets.wheel]
 packages = ["src/beautifulnumbers"]
 
-# [tool.setuptools]
-# package-dir = {"" = "src"}
-
-# [tool.setuptools.packages.find]
-# where = ["src"]
-
 ###### git tag-based version bump #####
 
 [tool.hatch.version] ##release
@@ -101,7 +95,7 @@ source = "vcs" ##release
 raw-options = {version_scheme = "no-guess-dev", local_scheme = "no-local-version"} ##release
 
 [tool.hatch.build.hooks.vcs] ##release
-version-file = "src/vancouver_survival/__version__.py" ##release
+version-file = "src/beautifulnumbers/__version__.py" ##release
 
 ######## Configure pytest for your test suite ########
 [tool.pytest.ini_options]
