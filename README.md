@@ -164,3 +164,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contribution to Python Ecosystem
 
 Much of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about.
+
+## Citation
+
+If you use this project, please cite it using the BibTeX entry in `CITATION.bib` (version `3.0.0`).
