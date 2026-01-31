@@ -22,8 +22,28 @@
 # SOFTWARE.
 
 """
-Add a docstring here for the init module.
+Beautiful Numbers - A collection of number theory and conversion utilities.
 
-This might include a very brief description of the package,
-its purpose, and any important notes.
+This package provides functions for:
+- Converting numbers to binary and hexadecimal representations
+- Generating Fibonacci sequences
+- Finding prime numbers
+
+Functions
+---------
+binary(num)
+    Convert a non-negative integer to binary representation.
+hexa(number)
+    Convert a non-negative integer to hexadecimal representation.
+fib_seq(n)
+    Generate the Fibonacci sequence of length n.
+prime_list(n)
+    Generate a list of all prime numbers up to and including n.
 """
+
+from beautifulnumbers.binary import binary
+from beautifulnumbers.fib_seq import fib_seq
+from beautifulnumbers.hexa import hexa
+from beautifulnumbers.prime_list import prime_list
+
+__all__ = ["binary", "fib_seq", "hexa", "prime_list"]
