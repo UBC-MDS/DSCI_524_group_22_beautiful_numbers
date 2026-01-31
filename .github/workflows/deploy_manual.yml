@@ -1,8 +1,8 @@
 name: deploy-test-pypi
-
+# This script will only be triggered manually now. See release.yml for auto versioning to PyPi Test.
 on:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
   workflow_dispatch:
 
 jobs:
