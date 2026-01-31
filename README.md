@@ -1,10 +1,15 @@
 # Beautiful Numbers
 
-[![Documentation](https://img.shields.io/badge/docs-gh--pages-blue)](https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/)
+|        |        |
+|--------|--------|
+| Documentation | [![Documentation](https://img.shields.io/badge/docs-gh--pages-blue)](https://ubc-mds.github.io/DSCI_524_group_22_beautiful_numbers/) |
+| Package | [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/) |
+| CI  | [![CI](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/actions/workflows/deploy.yml/badge.svg)](https://github.com/UBC-MDS/DSCI_524_group_22_beautiful_numbers/blob/e32a2d8855564d22a2f04a4987589a58d7312e2b/.github/workflows/deploy.yml)
 
 ## Contributors
 
 -   Jade Chen, Michael Oyatsi, Jackson Lu, Grigory Artazyan
+-   Master of Data Science 10th cohort Students
 
 ## Summary
 
@@ -32,7 +37,7 @@ Beautiful Numbers is a small Python package that provides utilities for explorin
 Install the package from Test PyPI:
 
 ``` bash
-pip install --index-url https://test.pypi.org/simple/beautifulnumbers
+pip install -i https://test.pypi.org/simple/ beautifulnumbers
 ```
 
 **Package URL**: https://test.pypi.org/project/beautifulnumbers/
@@ -72,10 +77,8 @@ pip install --index-url https://test.pypi.org/simple/beautifulnumbers
 ## Usage
 
 ``` python
-from beautifulnumbers.binary import binary
-from beautifulnumbers.hexa import hexa
-from beautifulnumbers.fib_seq import fib_seq
-from beautifulnumbers.prime_list import prime_list
+# Import all functions at once
+from beautifulnumbers import binary, fib_seq, hexa, prime_list
 
 # Generate prime numbers up to 20
 primes = prime_list(20)
@@ -162,3 +165,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contribution to Python Ecosystem
 
 Much of this functionality exists in the Python standard library or in established scientific packages, this package does not aim to replace those tools. Instead, it provides a minimal, self-contained set of functions with explicit logic that is easy to read and reason about.
+
+## Citation
+
+If you use this project, please cite it using the BibTeX entry in `CITATION.bib` (version `3.0.0`).
